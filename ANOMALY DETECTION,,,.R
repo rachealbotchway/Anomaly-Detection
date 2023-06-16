@@ -4,9 +4,9 @@ library(lattice)#visualizing and customizing of data
 library(caret)#required package for preprocessing and training of data
 library(tidyverse)#for visualization of data
 library(mlbench) #artificial and real-world machine learning benchmark problems for testing and comparing the performance of different machine learning algorithms.
-attach(data) #attaching  data to the dataset to the search path
 
 data <- read.csv("walmart_cleaned.csv") #reading of the data
+attach(data) #attaching  data to the dataset to the search path
 head(data) #describing the first six rows of the  data
 colSums(is.na(data)) #count of missing values in each column
 str(data) #checking data type for each column
